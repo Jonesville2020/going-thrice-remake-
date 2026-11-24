@@ -1,0 +1,12 @@
+{
+  "name": "Going Thrice — The auction table",
+  "short_name": "Going Thrice",
+  "description": "A game of auction nerve and clever collections.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#111a17",
+  "theme_color": "#111a17",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

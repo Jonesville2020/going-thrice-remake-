@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#111a17">
+    <meta name="description" content="A sharp little game of auction nerve, clever collections, and knowing when to hold.">
+    <title>Going Thrice — The auction table</title>
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app" class="app-shell" aria-live="polite"></div>
+    <script src="./engine.js"></script>
+    <script src="./app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(error => {
+          console.warn("Offline support could not be enabled.", error);
+        }));
+      }
+    </script>
+  </body>
+</html>
